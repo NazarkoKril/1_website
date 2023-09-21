@@ -3,7 +3,56 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+
     <title>WebSite</title>
   </head>
-  <body></body>
+  <body>
+    <header>
+      <div class="header_top">
+        <div class="container">
+          <h1 class="header_title">Polskie Elektrownie Jądrowe sp. z o. o.</h1>
+        </div>
+      </div>
+      <div class="header_bot line">
+        <div class="navbar">
+          <div class="container nav-container">
+            <input class="checkbox" type="checkbox" name="" id="" />
+            <div class="hamburger-lines">
+              <span class="line line1"></span>
+              <span class="line line2"></span>
+              <span class="line line3"></span>
+            </div>
+
+            <div class="menu-items nav">
+              <li><a href="#O projekcie">O projekcie</a></li>
+              <li><a href="#O spółce">O spółce</a></li>
+              <li><a href="#Opinie">Opinie</a></li>
+              <li><a href="#Dla inwestorów">Dla inwestorów</a></li>
+              <li><a href="#Jak zacząć?">Jak zacząć?</a></li>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- <div class="line"></div> -->
+    </header>
+    <script>
+      const openMenu = document.querySelector(".open_menu");
+      const nav = document.querySelector(".nav");
+      openMenu.addEventListener("click", () => {
+        nav.classList.toggle("active");
+      });
+    </script>
+  </body>
 </html>
