@@ -21,6 +21,11 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/css/ion.rangeSlider.min.css"
     />
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.12/css/intlTelInput.min.css">
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
     <link rel="stylesheet" href="css/style.css" />
 
     <title>WebSite</title>
@@ -90,10 +95,11 @@
               <input
                 class="form_tel modal-form_input"
                 type="tel"
-                id="phone"
+                id="phone1"
                 name="phone"
                 pattern="[0-9]{10}"
                 required
+                style="padding-left: 55px; width: 100%  !important;"
               />
               <input
                 class="form_submit"
@@ -122,7 +128,7 @@
         </div>
       </div>
       <div id="O_projekcie" class="section-2">
-        <div class="section-2_info" id="box1">
+        <div class="section-2_info container" id="box1">
           <h1 class="s2_title">O projekcie</h1>
           <p class="section-2_text">
             Decyzja Ministerstwa Klimatu Rzeczypospolitej Polskiej oficjalnie
@@ -153,7 +159,9 @@
         <div class="section-2_img">
           <img src="./img/section-2_man.png " id="box2" alt="man" />
         </div>
+        <div class="s2bottom_bord"></div>
       </div>
+      
       <div id="O_spółce" class="section-3">
         <div class="container">
           <div class="section-3_info">
@@ -193,74 +201,125 @@
       </div>
       <div id="Opinie" class="section-4">
         <h1 class="s4_title s2_title">Opinie</h1>
-        <div class="swiper image-slider">
-          <ul class="swiper-wrapper Opinie__list">
-            <li class="swiper-slide Opinie__item item">
-              <div class="img-container_slide">
-                <img class="slide_img" src="./img/profile_1.png" alt="" />
-              </div>
 
-              <h3 class="slide_name">Mateusz morawecki</h3>
-              <p class="slide_years">39 lat - Kierowca</p>
-              <p class="slide_info">
-                Decyzja Ministerstwa Klimatu Rzeczypospolitej Polskiej
-                oficjalnie potwierdza, że inwestycje w pierwszą elektrownię
-                jądrowe w Polsce są zgodne z interesem publicznym oraz polityką
-                prowadzoną przez państwo, zwłaszcza polityką energetyczną. Każdy
-                obywatel Polski będzie mógł czerpać korzyści z energii
-                wytwarzanej przez elektrownię jądrowe.
-              </p>
-            </li>
-            <li class="swiper-slide Opinie__item item">
-              <div class="img-container_slide">
-                <img class="slide_img" src="./img/profile_1.png" alt="" />
+        <div class="swiper image-slider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="image-wrapper">
+                <div class="img-container_slide">
+                  <img class="slide_img" src="./img/profile_1.png" alt="" />
+                </div>
+
+                <h3 class="slide_name">Mateusz morawecki</h3>
+                <p class="slide_years">39 lat - Kierowca</p>
+                <p class="slide_info">
+                  Decyzja Ministerstwa Klimatu Rzeczypospolitej Polskiej
+                  oficjalnie potwierdza, że inwestycje w pierwszą elektrownię
+                  jądrowe w Polsce są zgodne z interesem publicznym oraz
+                  polityką prowadzoną przez państwo, zwłaszcza polityką
+                  energetyczną. Każdy obywatel Polski będzie mógł czerpać
+                  korzyści z energii wytwarzanej przez elektrownię jądrowe.
+                </p>
               </div>
-              <h3 class="slide_name">Andrii melnukow</h3>
-              <p class="slide_years">26lat - Warszawa</p>
-              <p class="slide_info">
-                Decyzja Ministerstwa Klimatu Rzeczypospolitej Polskiej
-                oficjalnie potwierdza, że inwestycje w pierwszą elektrownię
-                jądrowe w Polsce są zgodne z interesem publicznym oraz polityką
-                prowadzoną przez państwo, zwłaszcza polityką energetyczną. Każdy
-                obywatel Polski będzie mógł czerpać korzyści z energii
-                wytwarzanej przez elektrownię jądrowe.
-              </p>
-            </li>
-            <li class="swiper-slide Opinie__item item image-slider">
-              <div class="img-container_slide">
-                <img class="slide_img" src="./img/profile_1.png" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <div class="image-wrapper">
+                <div class="img-container_slide">
+                  <img class="slide_img" src="./img/profile_1.png" alt="" />
+                </div>
+
+                <h3 class="slide_name">Alina Borys</h3>
+                <p class="slide_years">36 lat - Warszawa</p>
+                <p class="slide_info">
+                  Decyzja Ministerstwa Klimatu Rzeczypospolitej Polskiej
+                  oficjalnie potwierdza, że inwestycje w pierwszą elektrownię
+                  jądrowe w Polsce są zgodne z interesem publicznym oraz
+                  polityką prowadzoną przez państwo, zwłaszcza polityką
+                  energetyczną. Każdy obywatel Polski będzie mógł czerpać
+                  korzyści z energii wytwarzanej przez elektrownię jądrowe.
+                </p>
               </div>
-              <h3 class="slide_name">Oleg ibragimovych</h3>
-              <p class="slide_years">44 lat - Wrozlaw</p>
-              <p class="slide_info">
-                Decyzja Ministerstwa Klimatu Rzeczypospolitej Polskiej
-                oficjalnie potwierdza, że inwestycje w pierwszą elektrownię
-                jądrowe w Polsce są zgodne z interesem publicznym oraz polityką
-                prowadzoną przez państwo, zwłaszcza polityką energetyczną. Każdy
-                obywatel Polski będzie mógł czerpać korzyści z energii
-                wytwarzanej przez elektrownię jądrowe.
-              </p>
-            </li>
-            <li class="swiper-slide Opinie__item item">
-              <div class="img-container_slide">
-                <img class="slide_img" src="./img/profile_1.png" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <div class="image-wrapper">
+                <div class="img-container_slide">
+                  <img class="slide_img" src="./img/profile_1.png" alt="" />
+                </div>
+
+                <h3 class="slide_name">Andrii Dovbysh</h3>
+                <p class="slide_years">43 lat - Lviv</p>
+                <p class="slide_info">
+                  Decyzja Ministerstwa Klimatu Rzeczypospolitej Polskiej
+                  oficjalnie potwierdza, że inwestycje w pierwszą elektrownię
+                  jądrowe w Polsce są zgodne z interesem publicznym oraz
+                  polityką prowadzoną przez państwo, zwłaszcza polityką
+                  energetyczną. Każdy obywatel Polski będzie mógł czerpać
+                  korzyści z energii wytwarzanej przez elektrownię jądrowe.
+                </p>
               </div>
-              <h3 class="slide_name">Nazar kril</h3>
-              <p class="slide_years">21 lat - Lviv</p>
-              <p class="slide_info">
-                Decyzja Ministerstwa Klimatu Rzeczypospolitej Polskiej
-                oficjalnie potwierdza, że inwestycje w pierwszą elektrownię
-                jądrowe w Polsce są zgodne z interesem publicznym oraz polityką
-                prowadzoną przez państwo, zwłaszcza polityką energetyczną. Każdy
-                obywatel Polski będzie mógł czerpać korzyści z energii
-                wytwarzanej przez elektrownię jądrowe.
-              </p>
-            </li>
-          </ul>
+            </div>
+            <div class="swiper-slide">
+              <div class="image-wrapper">
+                <div class="img-container_slide">
+                  <img class="slide_img" src="./img/profile_1.png" alt="" />
+                </div>
+
+                <h3 class="slide_name">Igor Lebediev</h3>
+                <p class="slide_years">65 lat - Madrid</p>
+                <p class="slide_info">
+                  Decyzja Ministerstwa Klimatu Rzeczypospolitej Polskiej
+                  oficjalnie potwierdza, że inwestycje w pierwszą elektrownię
+                  jądrowe w Polsce są zgodne z interesem publicznym oraz
+                  polityką prowadzoną przez państwo, zwłaszcza polityką
+                  energetyczną. Każdy obywatel Polski będzie mógł czerpać
+                  korzyści z energii wytwarzanej przez elektrownię jądrowe.
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="image-wrapper">
+                <div class="img-container_slide">
+                  <img class="slide_img" src="./img/profile_1.png" alt="" />
+                </div>
+
+                <h3 class="slide_name">Alex Mbappe</h3>
+                <p class="slide_years">18 lat - Barselona</p>
+                <p class="slide_info">
+                  Decyzja Ministerstwa Klimatu Rzeczypospolitej Polskiej
+                  oficjalnie potwierdza, że inwestycje w pierwszą elektrownię
+                  jądrowe w Polsce są zgodne z interesem publicznym oraz
+                  polityką prowadzoną przez państwo, zwłaszcza polityką
+                  energetyczną. Każdy obywatel Polski będzie mógł czerpać
+                  korzyści z energii wytwarzanej przez elektrownię jądrowe.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- If we need pagination -->
           <div class="swiper-pagination"></div>
         </div>
       </div>
-      <div id="Dla_inwestorów" class="section-5"></div>
+      <div id="Dla_inwestorów" class="section-5">
+        <div class="range container">
+          <div class="range_titleblock">
+            <h1 class="range_title">Ile bede zarabial?</h1>
+            <p class="range_info">Twoja inwestycja</p>
+          </div>
+          <div class="range_container">
+            <div class="range-slider">
+              <input type="text" class="js-range-slider" value="" />
+            </div>
+            <div class="extra-controls">
+              <label for="text" class="js-input_info">Zarobisz</label>
+              <div class="range_input">
+                <input type="text" class="js-input" value="0" />
+              </div>
+              <div class="range_btn">Dołącz do nas</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <span></span>
       <div id="Jak_zacząć?" class="section-6">
         <div class="container">
           <div class="s6-info">
@@ -358,7 +417,7 @@
               <input
                 class="form_tel modal-form_input"
                 type="tel"
-                id="phone"
+                id="phone2"
                 name="phone"
                 pattern="[0-9]{10}"
                 required
@@ -398,8 +457,65 @@
         </div>
       </div>
     </footer>
+
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
     <script type="module" src="/index.js"></script>
+    <script>
+      var phone1 = document.getElementById("phone1");
+      var phone2 = document.getElementById("phone2");
+
+      var iti1 = intlTelInput(phone1, {
+          autoPlaceholder: false,
+          autoHideDialCode: false,
+          preferredCountries: ["AU", "GB", "IE", "DE"],
+          separateDialCode: false,
+          formatOnDisplay: false,
+          geoIpLookup: function (callback) {
+              $.get("https://get.geojs.io/v1/ip/country.json", function () { }).always(
+                  function (resp) {
+                      const countryCode = resp && resp.country ? resp.country : "AU";
+                      document.querySelector('input[name="subid"]').value = countryCode.toUpperCase();
+                      callback(countryCode);
+                  }
+              );
+          },
+          initialCountry: "auto",
+          hiddenInput: "full_number",
+          nationalMode: false,
+          placeholderNumberType: "MOBILE",
+      });
+
+      phone1.addEventListener("countrychange", function () {
+          var selectedCountry = iti1.getSelectedCountryData().iso2;
+          document.querySelector('input[name="subid"]').value = selectedCountry;
+      });
+
+      var iti2 = intlTelInput(phone2, {
+          autoPlaceholder: false,
+          autoHideDialCode: false,
+          preferredCountries: ["AU", "GB", "IE", "DE"],
+          separateDialCode: false,
+          formatOnDisplay: false,
+          geoIpLookup: function (callback) {
+              $.get("https://get.geojs.io/v1/ip/country.json", function () { }).always(
+                  function (resp) {
+                      const countryCode = resp && resp.country ? resp.country : "AU";
+                      document.querySelector('input[name="subid"]').value = countryCode.toUpperCase();
+                      callback(countryCode);
+                  }
+              );
+          },
+          initialCountry: "auto",
+          hiddenInput: "full_number",
+          nationalMode: false,
+          placeholderNumberType: "MOBILE",
+      });
+
+      phone2.addEventListener("countrychange", function () {
+          var selectedCountry = iti2.getSelectedCountryData().iso2;
+          document.querySelector('input[name="subid"]').value = selectedCountry;
+      });
+  </script>
   </body>
 </html>
