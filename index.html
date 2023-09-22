@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
@@ -24,7 +25,9 @@
     <link rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.12/css/intlTelInput.min.css">
 
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/css/ion.rangeSlider.min.css" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/js/ion.rangeSlider.min.js"></script>
 
     <link rel="stylesheet" href="css/style.css" />
 
@@ -60,11 +63,12 @@
     </header>
     <main>
       <div class="section-1">
+        <div class="container_form">
         <div class="form_box">
           <form class="transparent" id="myForm">
             <div class="form-inner">
               <h3 class="form_title">Zarejestruj</h3>
-
+              <input type="text" name="subid" value="" style="display: none;">
               <input
                 class="form_name modal-form_input"
                 type="text"
@@ -112,23 +116,15 @@
         <div class="support">
           <h2 class="supp_title">Dzięki wsparciu</h2>
           <div class="sup_img">
-            <img src="./img/sup_logo1.png" alt="logo_ministerstwo_klimatu" />
-            <img src="/img/sup_logo2.png" alt="logo_seim" />
+            <img src="./img/sup_logo1.png" class="oneImg" alt="logo_ministerstwo_klimatu" />
+            <img src="/img/sup_logo2.png" class="twoImg" alt="logo_seim" />
           </div>
-          <iframe
-            class="sup_video"
-            width="695"
-            height="400"
-            src="https://www.youtube.com/embed/xUL7L2-6W7s?si=irCb0ZY8yryYbz-3"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen
-          ></iframe>
+          <video class="video" src="./video.mp4" controls="" autoplay=""></video>
         </div>
       </div>
-      <div id="O_projekcie" class="section-2">
-        <div class="section-2_info container" id="box1">
+    </div>
+      <div id="O_projekcie" class="section-2 container">
+        <div class="section-2_info " id="box1">
           <h1 class="s2_title">O projekcie</h1>
           <p class="section-2_text">
             Decyzja Ministerstwa Klimatu Rzeczypospolitej Polskiej oficjalnie
@@ -159,7 +155,7 @@
         <div class="section-2_img">
           <img src="./img/section-2_man.png " id="box2" alt="man" />
         </div>
-        <div class="s2bottom_bord"></div>
+        
       </div>
       
       <div id="O_spółce" class="section-3">
@@ -200,6 +196,7 @@
         </div>
       </div>
       <div id="Opinie" class="section-4">
+        <div class="container"></div>
         <h1 class="s4_title s2_title">Opinie</h1>
 
         <div class="swiper image-slider">
@@ -298,6 +295,7 @@
           <!-- If we need pagination -->
           <div class="swiper-pagination"></div>
         </div>
+        </div>
       </div>
       <div id="Dla_inwestorów" class="section-5">
         <div class="range container">
@@ -386,7 +384,7 @@
           <form class="transparent" id="myForm">
             <div class="form-inner">
               <h3 class="form_title">Zarejestruj</h3>
-
+              <input type="text" name="subid" value="" style="display: none;">
               <input
                 class="form_name modal-form_input"
                 type="text"
@@ -461,6 +459,9 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 
     <script type="module" src="/index.js"></script>
+    <script src="./js/intlTelInput.js"></script>
+    <script src="./js/utils.js"></script>
+    <script src="./js/jquery.maskedinput.js"></script>
     <script>
       var phone1 = document.getElementById("phone1");
       var phone2 = document.getElementById("phone2");
