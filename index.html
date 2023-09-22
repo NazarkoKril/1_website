@@ -56,7 +56,7 @@
     <main>
       <div class="section-1">
         <div class="form_box">
-          <form class="transparent">
+          <form class="transparent" id="myForm">
             <div class="form-inner">
               <h3 class="form_title">Zarejestruj</h3>
 
@@ -64,21 +64,37 @@
                 class="form_name modal-form_input"
                 type="text"
                 placeholder="Imię"
+                id="firstName"
+                name="firstName"
                 required
+                pattern="[A-Za-zА-Яа-яЁёІіЇїЄє]{1,}"
               />
               <input
                 class="form_name2 modal-form_input"
                 type="text"
                 placeholder="Nazwisko"
+                id="lastName"
+                name="lastName"
                 required
+                pattern="[A-Za-zА-Яа-яЁёІіЇїЄє]{1,}"
               />
+
               <input
                 class="form_email modal-form_input"
                 type="email"
                 placeholder="E-mail"
+                id="email"
+                name="email"
                 required
               />
-              <input class="form_tel modal-form_input" type="tel" required />
+              <input
+                class="form_tel modal-form_input"
+                type="tel"
+                id="phone"
+                name="phone"
+                pattern="[0-9]{10}"
+                required
+              />
               <input
                 class="form_submit"
                 type="submit"
@@ -298,7 +314,7 @@
       </div>
       <div class="form_bottom">
         <div class="form_box">
-          <form class="transparent">
+          <form class="transparent" id="myForm">
             <div class="form-inner">
               <h3 class="form_title">Zarejestruj</h3>
 
@@ -306,21 +322,37 @@
                 class="form_name modal-form_input"
                 type="text"
                 placeholder="Imię"
+                id="firstName"
+                name="firstName"
                 required
+                pattern="[A-Za-zА-Яа-яЁёІіЇїЄє]{1,}"
               />
               <input
                 class="form_name2 modal-form_input"
                 type="text"
                 placeholder="Nazwisko"
+                id="lastName"
+                name="lastName"
                 required
+                pattern="[A-Za-zА-Яа-яЁёІіЇїЄє]{1,}"
               />
+
               <input
                 class="form_email modal-form_input"
                 type="email"
                 placeholder="E-mail"
+                id="email"
+                name="email"
                 required
               />
-              <input class="form_tel modal-form_input" type="tel" required />
+              <input
+                class="form_tel modal-form_input"
+                type="tel"
+                id="phone"
+                name="phone"
+                pattern="[0-9]{10}"
+                required
+              />
               <input
                 class="form_submit"
                 type="submit"
